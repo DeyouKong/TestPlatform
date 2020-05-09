@@ -24,7 +24,7 @@
     <div class="col-md-12">
         <div class="panel">
             <div class="panel-heading">
-                <a href="/platform/interface_add/" class="btn btn-primary">添加接口</a>
+                <a href="/platform/interface_add" class="btn btn-primary">添加接口</a>
             </div>
             <div class="panel-body">
                 <table class="table table-bordered">
@@ -45,8 +45,8 @@
                         <td>{{ if.project }}</td>
                         <td>{{ if.description }}</td>
                         <td>
-                            <a href="" class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
-                            <a href="" class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+                            <a href="/platform/interface_update?if_id={{ if.id }}" class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
+                            <div class="layui-btn layui-btn-danger layui-btn-xs if-del-btn" lay-event="del" if_value="{{ if.id }}">删除</div>
                         </td>
                     </tr>
                     {% endfor %}

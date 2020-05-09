@@ -55,6 +55,7 @@ def project_update(request):
 def project_delete(request):
     if request.method == 'GET':
         prj_id = request.GET['prj_id']
+        prj_id = request.GET['prj_id']
         Project.objects.filter(id=prj_id).delete()
         return HttpResponseRedirect("platform/project/")
 
@@ -137,6 +138,7 @@ def interface_index(request):
     return render(request, "TestPlatform/interface/index.html", {"if_list": if_list})
 
 def interface_add(request):
+    ret = {"status": "0", "messages": ""}
     if request.method == 'POST':
         if_name = request.POST['if_name']
         prj_id = request.POST['prj_id']
@@ -150,16 +152,61 @@ def interface_add(request):
         request_body_data = request.POST['request_body_data']
         response_header_data = request.POST['response_header_data']
         response_body_data = request.POST['response_body_data']
-        interface = Interface(name=if_name, url=url, project=project, method=method, data_type=data_type,
+        try:
+            interface = Interface(name=if_name, url=url, project=project, method=method, data_type=data_type,
                           is_sign=is_sign, description=description, request_header_param=request_header_data,
                           request_body_param=request_body_data, response_header_param=response_header_data,
                           response_body_param=response_body_data)
-        interface.save()
-        return HttpResponseRedirect("/interface/")
+            interface.save()
+        except Exception as err:
+            ret["status"] = "1"
+            ret["messages"] = err
+        return JsonResponse(ret)
     prj_list = Project.objects.all()
     return render(request, "TestPlatform/interface/add.html", {"prj_list": prj_list})
 
-# 接口增删改查
+def interface_update(request):
+    if request.method == 'POST':
+        if_id = request.POST['if_id']
+        print(if_id)
+        if_name = request.POST['if_name']
+        prj_id = request.POST['prj_id']
+        project = Project.objects.get(id=prj_id)
+        url = request.POST['url']
+        method = request.POST['method']
+        data_type = request.POST['data_type']
+        is_sign = request.POST['is_sign']
+        description = request.POST['description']
+        request_header_data = request.POST['request_header_data']
+        request_body_data = request.POST['request_body_data']
+        response_header_data = request.POST['response_header_data']
+        response_body_data = request.POST['response_body_data']
+        Interface.objects.filter(id=if_id).update(name=if_name, url=url, project=project, method=method, data_type=data_type,
+                          is_sign=is_sign, description=description, request_header_param=request_header_data,
+                          request_body_param=request_body_data, response_header_param=response_header_data,
+                          response_body_param=response_body_data)
+        return HttpResponseRedirect("/platform/interface/")
+    if_id = request.GET['if_id']
+    prj_list = Project.objects.all()
+    if_list = Interface.objects.get(id=if_id)
+    return render(request, "TestPlatform/interface/update.html", {"if_list": if_list, "prj_list": prj_list})
+
+def interface_delete(request):
+    ret = {"status": "0", "messages": ""}
+    print(ret)
+    if request.method == 'POST':
+        try:
+            if_id = request.POST.get('if_id')
+            print(if_id)
+            Interface.objects.filter(id=if_id).delete()
+            ret["messages"] = "/platform/interface/"
+            return JsonResponse(ret)
+        except Exception as err:
+            ret["status"] = 1
+            ret["messages"] = err
+            return ret
+    return redirect("/platform/interface/")
+
 def case_index(request):
     case_list = Case.objects.all()
     return render(request, "TestPlatform/case/index.html", {"case_list": case_list})

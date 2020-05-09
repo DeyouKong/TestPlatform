@@ -26,6 +26,8 @@ urlpatterns = [
     url(r'^env_update/', views.env_update),
 
     url(r'^interface_add/', views.interface_add),
+    url(r'^interface_update/', views.interface_update),
+    url(r'^interface_delete/', views.interface_delete),
     url(r'^interface/', views.interface_index),
 
     url(r'^case/', views.case_index),
