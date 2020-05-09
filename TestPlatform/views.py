@@ -71,6 +71,7 @@ def login(request):
 
     return render(request, "login.html")
 
+
 @login_required()
 def index(request):
     """
@@ -80,9 +81,27 @@ def index(request):
     """
     return render(request, "TestPlatform/index.html")
 
+
 @login_required()
 def logout(request):
     """注销"""
     auth.logout(request)
     return redirect("/login/")
+
+@login_required()
+def home(request):
+    """ 个人中心 """
+    return render(request, "404NotFound.html")
+
+
+@login_required()
+def message(request):
+    """ 消息中心 """
+    return render(request, "404NotFound.html")
+
+
+@login_required()
+def settings(request):
+    """ 设置 """
+    return render(request, "404NotFound.html")
 

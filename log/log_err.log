@@ -1765,3 +1765,248 @@ Traceback (most recent call last):
   File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1389, in names_to_path
     "Choices are: %s" % (name, ", ".join(available)))
 django.core.exceptions.FieldError: Cannot resolve keyword 'prj_id' into field. Choices are: case, description, environment, id, interface, name, plan, sign, sign_id
+[2020-05-08 07:40:51,107][Thread-1:123145367887872][task_id:django.request][log.py:228][ERROR][Internal Server Error: /platform/interface_update/]
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/utils/datastructures.py", line 77, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'env_id'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/APICloud/views.py", line 182, in interface_update
+    if_id = request.GET['env_id']
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/utils/datastructures.py", line 79, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'env_id'
+[2020-05-08 07:42:47,170][Thread-4:123145352081408][task_id:django.request][log.py:228][ERROR][Internal Server Error: /platform/interface_add/]
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/utils/datastructures.py", line 77, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'is_sign'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/APICloud/views.py", line 147, in interface_add
+    is_sign = request.POST['is_sign']
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/utils/datastructures.py", line 79, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'is_sign'
+[2020-05-08 07:43:51,805][Thread-4:123145352081408][task_id:django.request][log.py:228][ERROR][Internal Server Error: /platform/interface_add/]
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/utils/datastructures.py", line 77, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'is_sign'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/APICloud/views.py", line 147, in interface_add
+    is_sign = request.POST['is_sign']
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/utils/datastructures.py", line 79, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'is_sign'
+[2020-05-08 07:48:09,650][Thread-4:123145352081408][task_id:django.request][log.py:228][ERROR][Internal Server Error: /platform/interface_update/]
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/utils/datastructures.py", line 77, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'is_sign'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/APICloud/views.py", line 171, in interface_update
+    is_sign = request.POST['is_sign']
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/utils/datastructures.py", line 79, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'is_sign'
+[2020-05-08 07:49:53,083][Thread-1:123145416994816][task_id:django.request][log.py:228][ERROR][Internal Server Error: /platform/interface_update/]
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/utils/datastructures.py", line 77, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'is_sign'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/APICloud/views.py", line 172, in interface_update
+    is_sign = request.POST['is_sign']
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/utils/datastructures.py", line 79, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'is_sign'
+[2020-05-08 15:58:10,734][Thread-65:123145515261952][task_id:django.request][log.py:228][ERROR][Internal Server Error: /platform/interface_delete/]
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_response(request, response)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/middleware/common.py", line 105, in process_response
+    if response.status_code == 404:
+AttributeError: 'dict' object has no attribute 'status_code'
+[2020-05-08 16:03:01,704][Thread-5:123145394835456][task_id:django.request][log.py:228][ERROR][Internal Server Error: /platform/interface_delete]
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/utils/deprecation.py", line 90, in __call__
+    response = self.process_request(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/platform/interface_delete/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+[2020-05-08 16:05:23,943][Thread-8:123145410600960][task_id:django.request][log.py:228][ERROR][Internal Server Error: /platform/interface_delete/]
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_response(request, response)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/middleware/common.py", line 105, in process_response
+    if response.status_code == 404:
+AttributeError: 'dict' object has no attribute 'status_code'
+[2020-05-08 16:07:13,075][Thread-1:123145555685376][task_id:django.request][log.py:228][ERROR][Internal Server Error: /platform/interface_delete/]
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_response(request, response)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/middleware/common.py", line 105, in process_response
+    if response.status_code == 404:
+AttributeError: 'dict' object has no attribute 'status_code'
+[2020-05-08 16:15:25,782][Thread-1:123145580617728][task_id:django.request][log.py:228][ERROR][Internal Server Error: /platform/interface_delete/]
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_response(request, response)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/middleware/common.py", line 105, in process_response
+    if response.status_code == 404:
+AttributeError: 'dict' object has no attribute 'status_code'
+[2020-05-08 16:15:46,098][Thread-1:123145483923456][task_id:django.request][log.py:228][ERROR][Internal Server Error: /platform/interface_delete/]
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_response(request, response)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/middleware/common.py", line 105, in process_response
+    if response.status_code == 404:
+AttributeError: 'dict' object has no attribute 'status_code'
+[2020-05-08 16:16:34,618][Thread-3:123145483923456][task_id:django.request][log.py:228][ERROR][Internal Server Error: /platform/interface_delete/]
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_response(request, response)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/middleware/common.py", line 105, in process_response
+    if response.status_code == 404:
+AttributeError: 'dict' object has no attribute 'status_code'
+[2020-05-08 16:30:46,501][Thread-11:123145440931840][task_id:django.request][log.py:228][ERROR][Internal Server Error: /platform/interface_add/]
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/utils/datastructures.py", line 77, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'method'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/APICloud/views.py", line 146, in interface_add
+    method = request.POST['method']
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/utils/datastructures.py", line 79, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'method'
+[2020-05-08 16:30:53,212][Thread-11:123145440931840][task_id:django.request][log.py:228][ERROR][Internal Server Error: /platform/interface_add/]
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/utils/datastructures.py", line 77, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'method'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/APICloud/views.py", line 146, in interface_add
+    method = request.POST['method']
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/utils/datastructures.py", line 79, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'method'
+[2020-05-08 16:36:47,720][Thread-1:123145352478720][task_id:django.request][log.py:228][ERROR][Internal Server Error: /platform/interface_add/]
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/utils/datastructures.py", line 77, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'method'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/APICloud/views.py", line 146, in interface_add
+    method = request.POST['method']
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/utils/datastructures.py", line 79, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'method'
+[2020-05-09 02:06:15,596][Thread-10:123145446084608][task_id:django.request][log.py:228][ERROR][Internal Server Error: /platform/project_delete/platform/project/]
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/utils/datastructures.py", line 77, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'prj_id'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/APICloud/views.py", line 57, in project_delete
+    prj_id = request.GET['prj_id']
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/utils/datastructures.py", line 79, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'prj_id'
