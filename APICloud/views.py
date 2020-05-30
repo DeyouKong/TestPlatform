@@ -46,7 +46,7 @@ def project_update(request):
             sign_id = request.POST['sign_id']
             sign = Sign.objects.get(id=sign_id)
             Project.objects.filter(id=prj_id).update(name=prj_name, description=description,sign=sign)
-            return HttpResponseRedirect("/platform/project/")
+            return redirect("/platform/project/")
     prj_id = request.GET['prj_id']
     prj = Project.objects.get(id=prj_id)
     sign_list = Sign.objects.all()
@@ -55,9 +55,8 @@ def project_update(request):
 def project_delete(request):
     if request.method == 'GET':
         prj_id = request.GET['prj_id']
-        prj_id = request.GET['prj_id']
         Project.objects.filter(id=prj_id).delete()
-        return HttpResponseRedirect("platform/project/")
+        return redirect("/platform/project/")
 
 
 def sign_index(request):
@@ -118,10 +117,11 @@ def env_add(request):
 def env_update(request):
     """ 测试环境更新 """
     if request.method == 'POST':
-        env_id = request.POST['env_id']
+        env_id = int(request.POST['env_id'])
+        print(type(env_id))
         env_name = request.POST['env_name']
         prj_id = request.POST['prj_id']
-        project = Project.objects.get(prj_id=prj_id)
+        project = Project.objects.get(id=prj_id)
         url = request.POST['url']
         private_key = request.POST['private_key']
         description = request.POST['description']
@@ -209,7 +209,8 @@ def interface_delete(request):
 
 def case_index(request):
     case_list = Case.objects.all()
-    return render(request, "TestPlatform/case/index.html", {"case_list": case_list})
+    env_list = Environment.objects.all()
+    return render(request, "TestPlatform/case/index.html", {"case_list": case_list, "env_list": env_list})
 
 def case_add(request):
     if request.method == 'POST':
@@ -231,6 +232,20 @@ def case_run(request):
         execute = Execute(case_id, env_id)
         case_result = execute.run_case()
         return JsonResponse(case_result)
+
+def case_delete(request):
+    ret = {"status": "0", "messages": ""}
+    if request.method == 'POST':
+        try:
+            case_id = request.POST.get('case_id')
+            Case.objects.filter(id=case_id).delete()
+            ret["messages"] = "/platform/case_index/"
+            return JsonResponse(ret)
+        except Exception as err:
+            ret["status"] = 1
+            ret["messages"] = err
+            return ret
+    return redirect("/platform/case_index/")
 
 
 def plan_index(request):
@@ -311,8 +326,8 @@ def findata(request):
         if get_type == "get_env_by_prj_id":
             prj_id = request.GET["prj_id"]
             # 查询并将结果转换为json
-            env = Environment.objects.filter(project_id=prj_id).values()
-            return JsonResponse(list(env), safe=False)
+            envs = Environment.objects.filter(project_id=prj_id).values()
+            return JsonResponse(list(envs), safe=False)
         if get_type == "get_all_case_by_prj_id":
             prj_id = request.GET["prj_id"]
             # 查询并将结果转换为json

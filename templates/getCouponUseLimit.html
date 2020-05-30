@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>查询喜茶券使用限制</title>
+    <!-- 加上下面的语句就可以适配移动端，否则不适配，会出现错乱或者滚动条 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #eeeeee;
+        }
+    </style>
+</head>
+<body>
+<div style="margin-top: 3%;margin-left: 30%">
+    <form class="form-inline">
+        <div class="form-group">
+            <label for="couponId">喜茶券ID:</label>
+            <input type="text" class="form-control" name="couponId" id="couponId" placeholder="喜茶券编码">
+        </div>
+        <div class="form-group">
+            <label for="useLimit">使用限制:</label>
+            <input type="text" class="form-control" name="useLimit" id="useLimit" placeholder="1:商品 ， 2 分类">
+        </div>
+        <button type="button" class="btn btn-default btn-primary btn-submit">查询</button>
+    </form>
+</div>
+<div class="msgList" style="margin-top: 20px; margin-left: 25%">
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <th>喜茶ID</th>
+            <th>商品ID/分类ID</th>
+            <th>商品名称/商品分类</th>
+        </tr>
+        </thead>
+        <tbody class="tb">
+        </tbody>
+    </table>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+<script>
+    $(".btn-submit").click(function () {
+         $(".tb").html("");
+        var couponId = $("#couponId").val();
+        var useLimit = $("#useLimit").val();
+        $.ajax({
+            type: "post",
+            url: "/getCouponUseLimit/",
+            traditional: true,
+            dataType: "json",
+            data: {"couponId": couponId, "useLimit": useLimit},
+        }).done(function (data) {
+            if (data.status === 0) {
+                if (data.data.affected_rows > 0) {
+                    var tb = ""
+                    $.each(data.data.rows, function (i, item) {
+                        var tr = "<tr>\n" +
+                            "<th scope=\"row\">"+ item[0] +"</th>\n" +
+                            "<td>"+ item[1] +"</td>\n" +
+                            "<td>"+ item[3] +"</td>\n" +
+                            "</tr>";
+                        tb = tb + tr
+                    });
+                    $(".tb").html(tb)
+                }
+            } else {
+               alert("出错啦")
+            }
+        })
+    })
+</script>
+
+</body>
+</html>

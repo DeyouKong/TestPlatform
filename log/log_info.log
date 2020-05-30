@@ -2121,3 +2121,1547 @@ django.utils.datastructures.MultiValueDictKeyError: 'prj_id'
 [2020-05-09 15:30:47,089][Thread-74:123145461850112][task_id:django.request][log.py:228][WARNING][Not Found: /media/]
 [2020-05-09 15:30:47,508][Thread-74:123145461850112][task_id:django.request][log.py:228][WARNING][Not Found: /media/]
 [2020-05-09 16:12:30,391][Thread-11:123145318383616][task_id:django.request][log.py:228][WARNING][Not Found: /message/javascript :;]
+[2020-05-20 07:50:01,979][Thread-1:123145467461632][task_id:django.request][log.py:228][ERROR][Internal Server Error: /getCouponUseLimit]
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/utils/deprecation.py", line 90, in __call__
+    response = self.process_request(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/getCouponUseLimit/?couponId=3014&categoryLimit=1 (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+[2020-05-20 07:52:03,880][Thread-3:123145467461632][task_id:django.request][log.py:228][ERROR][Internal Server Error: /getCouponUseLimit]
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/utils/deprecation.py", line 90, in __call__
+    response = self.process_request(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/getCouponUseLimit/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+[2020-05-20 07:54:14,848][Thread-4:123145467461632][task_id:django.request][log.py:228][ERROR][Internal Server Error: /getCouponUseLimit]
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/utils/deprecation.py", line 90, in __call__
+    response = self.process_request(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/getCouponUseLimit/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+[2020-05-20 07:54:51,365][Thread-7:123145477971968][task_id:django.request][log.py:228][ERROR][Internal Server Error: /getCouponUseLimit/]
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 137, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view TestPlatform.getCouponUseLimit.getCouponUseLimit didn't return an HttpResponse object. It returned None instead.
+[2020-05-20 07:54:51,502][Thread-7:123145477971968][task_id:django.request][log.py:228][WARNING][Not Found: /favicon.ico]
+[2020-05-20 07:55:41,431][Thread-1:123145424334848][task_id:django.request][log.py:228][ERROR][Internal Server Error: /getCouponUseLimit/]
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/TestPlatform/getCouponUseLimit.py", line 79, in getCouponUseLimit
+    return JsonResponse("404")
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/http/response.py", line 552, in __init__
+    'In order to allow non-dict objects to be serialized set the '
+TypeError: In order to allow non-dict objects to be serialized set the safe parameter to False.
+[2020-05-20 07:55:45,404][Thread-1:123145424334848][task_id:django.request][log.py:228][ERROR][Internal Server Error: /getCouponUseLimit/]
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/TestPlatform/getCouponUseLimit.py", line 79, in getCouponUseLimit
+    return JsonResponse("404")
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/http/response.py", line 552, in __init__
+    'In order to allow non-dict objects to be serialized set the '
+TypeError: In order to allow non-dict objects to be serialized set the safe parameter to False.
+[2020-05-20 08:04:43,377][Thread-4:123145424334848][task_id:django.request][log.py:228][ERROR][Internal Server Error: /getCouponUseLimit]
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/utils/deprecation.py", line 90, in __call__
+    response = self.process_request(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/getCouponUseLimit/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+[2020-05-20 08:05:12,458][Thread-1:123145495281664][task_id:django.request][log.py:228][ERROR][Internal Server Error: /getCouponUseLimit]
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/utils/deprecation.py", line 90, in __call__
+    response = self.process_request(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/getCouponUseLimit/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+[2020-05-20 08:06:46,328][Thread-3:123145495281664][task_id:django.request][log.py:228][ERROR][Internal Server Error: /getCouponUseLimit/]
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/urllib3/connectionpool.py", line 603, in urlopen
+    chunked=chunked)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/urllib3/connectionpool.py", line 387, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 2, in raise_from
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/urllib3/connectionpool.py", line 383, in _make_request
+    httplib_response = conn.getresponse()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 1331, in getresponse
+    response.begin()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 297, in begin
+    version, status, reason = self._read_status()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 266, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/urllib3/connectionpool.py", line 641, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/urllib3/util/retry.py", line 368, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/urllib3/packages/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/urllib3/connectionpool.py", line 603, in urlopen
+    chunked=chunked)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/urllib3/connectionpool.py", line 387, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 2, in raise_from
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/urllib3/connectionpool.py", line 383, in _make_request
+    httplib_response = conn.getresponse()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 1331, in getresponse
+    response.begin()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 297, in begin
+    version, status, reason = self._read_status()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 266, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/TestPlatform/getCouponUseLimit.py", line 74, in getCouponUseLimit
+    res = requests.request("POST", url, data=payload, headers=header).json()
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/requests/adapters.py", line 498, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+[2020-05-20 08:06:49,928][Thread-1:123145349300224][task_id:django.request][log.py:228][ERROR][Internal Server Error: /getCouponUseLimit]
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/utils/deprecation.py", line 90, in __call__
+    response = self.process_request(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/getCouponUseLimit/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+[2020-05-20 08:07:17,986][Thread-4:123145355091968][task_id:django.request][log.py:228][ERROR][Internal Server Error: /getCouponUseLimit/]
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/TestPlatform/getCouponUseLimit.py", line 79, in getCouponUseLimit
+    return JsonResponse("404")
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/http/response.py", line 552, in __init__
+    'In order to allow non-dict objects to be serialized set the '
+TypeError: In order to allow non-dict objects to be serialized set the safe parameter to False.
+[2020-05-20 08:47:39,319][Thread-26:123145394266112][task_id:django.request][log.py:228][ERROR][Internal Server Error: /getCouponUseLimit/]
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/urllib3/connectionpool.py", line 603, in urlopen
+    chunked=chunked)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/urllib3/connectionpool.py", line 387, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 2, in raise_from
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/urllib3/connectionpool.py", line 383, in _make_request
+    httplib_response = conn.getresponse()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 1331, in getresponse
+    response.begin()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 297, in begin
+    version, status, reason = self._read_status()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 266, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/urllib3/connectionpool.py", line 641, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/urllib3/util/retry.py", line 368, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/urllib3/packages/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/urllib3/connectionpool.py", line 603, in urlopen
+    chunked=chunked)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/urllib3/connectionpool.py", line 387, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 2, in raise_from
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/urllib3/connectionpool.py", line 383, in _make_request
+    httplib_response = conn.getresponse()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 1331, in getresponse
+    response.begin()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 297, in begin
+    version, status, reason = self._read_status()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 266, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/TestPlatform/getCouponUseLimit.py", line 79, in getCouponUseLimit
+    res = requests.request("POST", url, data=payload, headers=header).json()
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/requests/adapters.py", line 498, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+[2020-05-20 08:47:40,067][Thread-27:123145399521280][task_id:django.request][log.py:228][ERROR][Internal Server Error: /getCouponUseLimit/]
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/urllib3/connectionpool.py", line 603, in urlopen
+    chunked=chunked)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/urllib3/connectionpool.py", line 387, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 2, in raise_from
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/urllib3/connectionpool.py", line 383, in _make_request
+    httplib_response = conn.getresponse()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 1331, in getresponse
+    response.begin()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 297, in begin
+    version, status, reason = self._read_status()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 266, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/urllib3/connectionpool.py", line 641, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/urllib3/util/retry.py", line 368, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/urllib3/packages/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/urllib3/connectionpool.py", line 603, in urlopen
+    chunked=chunked)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/urllib3/connectionpool.py", line 387, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 2, in raise_from
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/urllib3/connectionpool.py", line 383, in _make_request
+    httplib_response = conn.getresponse()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 1331, in getresponse
+    response.begin()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 297, in begin
+    version, status, reason = self._read_status()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 266, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/TestPlatform/getCouponUseLimit.py", line 79, in getCouponUseLimit
+    res = requests.request("POST", url, data=payload, headers=header).json()
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/requests/adapters.py", line 498, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+[2020-05-20 08:47:53,035][Thread-28:123145405313024][task_id:django.request][log.py:228][ERROR][Internal Server Error: /getCouponUseLimit/]
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/urllib3/connectionpool.py", line 603, in urlopen
+    chunked=chunked)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/urllib3/connectionpool.py", line 387, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 2, in raise_from
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/urllib3/connectionpool.py", line 383, in _make_request
+    httplib_response = conn.getresponse()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 1331, in getresponse
+    response.begin()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 297, in begin
+    version, status, reason = self._read_status()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 266, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/urllib3/connectionpool.py", line 641, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/urllib3/util/retry.py", line 368, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/urllib3/packages/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/urllib3/connectionpool.py", line 603, in urlopen
+    chunked=chunked)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/urllib3/connectionpool.py", line 387, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 2, in raise_from
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/urllib3/connectionpool.py", line 383, in _make_request
+    httplib_response = conn.getresponse()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 1331, in getresponse
+    response.begin()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 297, in begin
+    version, status, reason = self._read_status()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 266, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/TestPlatform/getCouponUseLimit.py", line 79, in getCouponUseLimit
+    res = requests.request("POST", url, data=payload, headers=header).json()
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/requests/adapters.py", line 498, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+[2020-05-20 09:02:44,724][Thread-4:123145494519808][task_id:django.request][log.py:228][WARNING][Not Found: /favicon.ico]
+[2020-05-20 09:03:29,810][Thread-4:123145494519808][task_id:django.request][log.py:228][WARNING][Not Found: /favicon.ico]
+[2020-05-20 09:09:02,546][Thread-4:123145494519808][task_id:django.request][log.py:228][ERROR][Internal Server Error: /getCouponUseLimit/]
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/urllib3/connection.py", line 160, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/urllib3/util/connection.py", line 80, in create_connection
+    raise err
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/urllib3/util/connection.py", line 70, in create_connection
+    sock.connect(sa)
+TimeoutError: [Errno 60] Operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/urllib3/connectionpool.py", line 603, in urlopen
+    chunked=chunked)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/urllib3/connectionpool.py", line 344, in _make_request
+    self._validate_conn(conn)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/urllib3/connectionpool.py", line 843, in _validate_conn
+    conn.connect()
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/urllib3/connection.py", line 316, in connect
+    conn = self._new_conn()
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/urllib3/connection.py", line 169, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.VerifiedHTTPSConnection object at 0x10ee271d0>: Failed to establish a new connection: [Errno 60] Operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/urllib3/connectionpool.py", line 641, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/urllib3/util/retry.py", line 399, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='dbauto.heyteago.com', port=443): Max retries exceeded with url: /authenticate/ (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x10ee271d0>: Failed to establish a new connection: [Errno 60] Operation timed out',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/TestPlatform/getCouponUseLimit.py", line 51, in getCouponUseLimit
+    csrftoken, sessionid = dbLogin()
+  File "/Users/deyoukong/项目/web项目/TestPlatform/TestPlatform/getCouponUseLimit.py", line 36, in dbLogin
+    authenticate = requests.request("POST",url, data=payload, headers=header)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='dbauto.heyteago.com', port=443): Max retries exceeded with url: /authenticate/ (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x10ee271d0>: Failed to establish a new connection: [Errno 60] Operation timed out',))
+[2020-05-29 05:50:56,401][Thread-5:123145485602816][task_id:django.request][log.py:228][WARNING][Not Found: /forMyLover/]
+[2020-05-29 05:50:56,557][Thread-5:123145485602816][task_id:django.request][log.py:228][WARNING][Not Found: /favicon.ico]
+[2020-05-30 07:16:58,810][Thread-4:123145488408576][task_id:django.request][log.py:228][ERROR][Internal Server Error: /platform/project_delete/platform/project/]
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/utils/datastructures.py", line 77, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'prj_id'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/APICloud/views.py", line 57, in project_delete
+    prj_id = request.GET['prj_id']
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/utils/datastructures.py", line 79, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'prj_id'
+[2020-05-30 07:16:58,937][Thread-4:123145488408576][task_id:django.request][log.py:228][WARNING][Not Found: /favicon.ico]
+[2020-05-30 07:18:21,248][Thread-4:123145488408576][task_id:django.request][log.py:228][ERROR][Internal Server Error: /platform/project_delete/platform/project/]
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/utils/datastructures.py", line 77, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'prj_id'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/APICloud/views.py", line 57, in project_delete
+    prj_id = request.GET['prj_id']
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/utils/datastructures.py", line 79, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'prj_id'
+[2020-05-30 07:20:00,915][Thread-1:123145493790720][task_id:django.request][log.py:228][ERROR][Internal Server Error: /platform/project_delete/platform/project/]
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/utils/datastructures.py", line 77, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'prj_id'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/APICloud/views.py", line 57, in project_delete
+    prj_id = request.GET['prj_id']
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/utils/datastructures.py", line 79, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'prj_id'
+[2020-05-30 07:23:40,868][Thread-1:123145395920896][task_id:django.request][log.py:228][ERROR][Internal Server Error: /platform/env_update/]
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/APICloud/views.py", line 123, in env_update
+    project = Project.objects.get(prj_id=prj_id)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/query.py", line 390, in get
+    clone = self.filter(*args, **kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/query.py", line 844, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/query.py", line 862, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1263, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1287, in _add_q
+    split_subq=split_subq,
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1164, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1028, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1389, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'prj_id' into field. Choices are: case, description, environment, id, interface, name, plan, sign, sign_id
+[2020-05-30 07:27:48,402][Thread-1:123145504821248][task_id:django.request][log.py:228][ERROR][Internal Server Error: /platform/env_update/]
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/APICloud/views.py", line 127, in env_update
+    Environment.objects.filter(id=env_id).update(name=env_name, url=url, project=project, private_key=private_key, description=description)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/query.py", line 844, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/query.py", line 862, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1263, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1287, in _add_q
+    split_subq=split_subq,
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1225, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1096, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/lookups.py", line 20, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/lookups.py", line 70, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 965, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'hidden'
+[2020-05-30 07:27:55,355][Thread-1:123145504821248][task_id:django.request][log.py:228][ERROR][Internal Server Error: /platform/env_update/]
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/APICloud/views.py", line 127, in env_update
+    Environment.objects.filter(id=env_id).update(name=env_name, url=url, project=project, private_key=private_key, description=description)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/query.py", line 844, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/query.py", line 862, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1263, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1287, in _add_q
+    split_subq=split_subq,
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1225, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1096, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/lookups.py", line 20, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/lookups.py", line 70, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 965, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'hidden'
+[2020-05-30 07:28:09,967][Thread-1:123145504821248][task_id:django.request][log.py:228][ERROR][Internal Server Error: /platform/env_update/]
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/APICloud/views.py", line 127, in env_update
+    Environment.objects.filter(id=env_id).update(name=env_name, url=url, project=project, private_key=private_key, description=description)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/query.py", line 844, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/query.py", line 862, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1263, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1287, in _add_q
+    split_subq=split_subq,
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1225, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1096, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/lookups.py", line 20, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/lookups.py", line 70, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 965, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'hidden'
+[2020-05-30 07:29:13,689][Thread-1:123145379676160][task_id:django.request][log.py:228][ERROR][Internal Server Error: /platform/env_update/]
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/APICloud/views.py", line 128, in env_update
+    Environment.objects.filter(id=env_id).update(name=env_name, url=url, project=project, private_key=private_key, description=description)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/query.py", line 844, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/query.py", line 862, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1263, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1287, in _add_q
+    split_subq=split_subq,
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1225, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1096, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/lookups.py", line 20, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/lookups.py", line 70, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 965, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'hidden'
+[2020-05-30 07:29:41,825][Thread-1:123145379676160][task_id:django.request][log.py:228][ERROR][Internal Server Error: /platform/env_update/]
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/APICloud/views.py", line 128, in env_update
+    Environment.objects.filter(id=env_id).update(name=env_name, url=url, project=project, private_key=private_key, description=description)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/query.py", line 844, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/query.py", line 862, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1263, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1287, in _add_q
+    split_subq=split_subq,
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1225, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1096, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/lookups.py", line 20, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/lookups.py", line 70, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 965, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: '本地'
+[2020-05-30 07:30:25,683][Thread-1:123145318719488][task_id:django.request][log.py:228][ERROR][Internal Server Error: /platform/env_update/]
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/APICloud/views.py", line 120, in env_update
+    env_id = int(request.POST['env_id'])
+ValueError: invalid literal for int() with base 10: 'hidden'
+[2020-05-30 07:31:06,068][Thread-1:123145318719488][task_id:django.request][log.py:228][ERROR][Internal Server Error: /platform/interface_update]
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/utils/deprecation.py", line 90, in __call__
+    response = self.process_request(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/platform/interface_update/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+[2020-05-30 07:31:16,469][Thread-6:123145318719488][task_id:django.request][log.py:228][ERROR][Internal Server Error: /platform/interface_update]
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/utils/deprecation.py", line 90, in __call__
+    response = self.process_request(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/platform/interface_update/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+[2020-05-30 07:31:45,585][Thread-7:123145318719488][task_id:django.request][log.py:228][WARNING][Not Found: /platform/env_delete]
+[2020-05-30 07:33:25,987][Thread-7:123145318719488][task_id:django.request][log.py:228][ERROR][Internal Server Error: /platform/interface_update]
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/utils/deprecation.py", line 90, in __call__
+    response = self.process_request(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/platform/interface_update/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+[2020-05-30 07:36:19,752][Thread-15:123145318719488][task_id:django.request][log.py:228][ERROR][Internal Server Error: /platform/findata/]
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/APICloud/views.py", line 309, in findata
+    interface = Interface.objects.filter(id=if_id).values()
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/query.py", line 844, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/query.py", line 862, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1263, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1287, in _add_q
+    split_subq=split_subq,
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1225, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1096, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/lookups.py", line 20, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/lookups.py", line 70, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 965, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'undefined'
+[2020-05-30 07:36:24,738][Thread-15:123145318719488][task_id:django.request][log.py:228][ERROR][Internal Server Error: /platform/findata/]
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/APICloud/views.py", line 309, in findata
+    interface = Interface.objects.filter(id=if_id).values()
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/query.py", line 844, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/query.py", line 862, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1263, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1287, in _add_q
+    split_subq=split_subq,
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1225, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1096, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/lookups.py", line 20, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/lookups.py", line 70, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 965, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'undefined'
+[2020-05-30 07:36:32,189][Thread-15:123145318719488][task_id:django.request][log.py:228][ERROR][Internal Server Error: /platform/findata/]
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/APICloud/views.py", line 309, in findata
+    interface = Interface.objects.filter(id=if_id).values()
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/query.py", line 844, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/query.py", line 862, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1263, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1287, in _add_q
+    split_subq=split_subq,
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1225, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1096, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/lookups.py", line 20, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/lookups.py", line 70, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 965, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'undefined'
+[2020-05-30 07:38:23,389][Thread-15:123145318719488][task_id:django.request][log.py:228][ERROR][Internal Server Error: /platform/case_run/]
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/APICloud/views.py", line 231, in case_run
+    execute = Execute(case_id, env_id)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/common/execute.py", line 25, in __init__
+    self.prj_id, self.env_url, self.private_key = self.get_env(self.env_id)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/common/execute.py", line 188, in get_env
+    env = Environment.objects.get(env_id=env_id)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/query.py", line 390, in get
+    clone = self.filter(*args, **kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/query.py", line 844, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/query.py", line 862, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1263, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1287, in _add_q
+    split_subq=split_subq,
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1164, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1028, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1389, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'env_id' into field. Choices are: description, id, name, plan, private_key, project, project_id, url
+[2020-05-30 07:38:42,492][Thread-18:123145323974656][task_id:django.request][log.py:228][ERROR][Internal Server Error: /platform/case_run/]
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/APICloud/views.py", line 231, in case_run
+    execute = Execute(case_id, env_id)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/common/execute.py", line 25, in __init__
+    self.prj_id, self.env_url, self.private_key = self.get_env(self.env_id)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/common/execute.py", line 188, in get_env
+    env = Environment.objects.get(env_id=env_id)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/query.py", line 390, in get
+    clone = self.filter(*args, **kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/query.py", line 844, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/query.py", line 862, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1263, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1287, in _add_q
+    split_subq=split_subq,
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1164, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1028, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1389, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'env_id' into field. Choices are: description, id, name, plan, private_key, project, project_id, url
+[2020-05-30 08:04:52,215][Thread-4:123145462472704][task_id:django.request][log.py:228][ERROR][Internal Server Error: /platform/case_run/]
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/APICloud/views.py", line 233, in case_run
+    execute = Execute(case_id, env_id)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/common/execute.py", line 25, in __init__
+    self.prj_id, self.env_url, self.private_key = self.get_env(self.env_id)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/common/execute.py", line 188, in get_env
+    env = Environment.objects.get(env_id=env_id)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/query.py", line 390, in get
+    clone = self.filter(*args, **kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/query.py", line 844, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/query.py", line 862, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1263, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1287, in _add_q
+    split_subq=split_subq,
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1164, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1028, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1389, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'env_id' into field. Choices are: description, id, name, plan, private_key, project, project_id, url
+[2020-05-30 08:05:49,989][Thread-8:123145462472704][task_id:django.request][log.py:228][ERROR][Internal Server Error: /platform/env_update/]
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/APICloud/views.py", line 120, in env_update
+    env_id = int(request.POST['env_id'])
+ValueError: invalid literal for int() with base 10: 'hidden'
+[2020-05-30 08:05:50,147][Thread-8:123145462472704][task_id:django.request][log.py:228][WARNING][Not Found: /favicon.ico]
+[2020-05-30 08:06:30,288][Thread-15:123145462472704][task_id:django.request][log.py:228][ERROR][Internal Server Error: /platform/interface_update]
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/utils/deprecation.py", line 90, in __call__
+    response = self.process_request(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/platform/interface_update/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+[2020-05-30 08:08:27,561][Thread-32:123145462472704][task_id:django.request][log.py:228][ERROR][Internal Server Error: /platform/case_run/]
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/APICloud/views.py", line 233, in case_run
+    execute = Execute(case_id, env_id)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/common/execute.py", line 25, in __init__
+    self.prj_id, self.env_url, self.private_key = self.get_env(self.env_id)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/common/execute.py", line 188, in get_env
+    env = Environment.objects.get(env_id=env_id)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/query.py", line 390, in get
+    clone = self.filter(*args, **kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/query.py", line 844, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/query.py", line 862, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1263, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1287, in _add_q
+    split_subq=split_subq,
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1164, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1028, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1389, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'env_id' into field. Choices are: description, id, name, plan, private_key, project, project_id, url
+[2020-05-30 08:08:39,186][Thread-32:123145462472704][task_id:django.request][log.py:228][ERROR][Internal Server Error: /platform/case_run/]
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/APICloud/views.py", line 233, in case_run
+    execute = Execute(case_id, env_id)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/common/execute.py", line 25, in __init__
+    self.prj_id, self.env_url, self.private_key = self.get_env(self.env_id)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/common/execute.py", line 188, in get_env
+    env = Environment.objects.get(env_id=env_id)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/query.py", line 390, in get
+    clone = self.filter(*args, **kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/query.py", line 844, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/query.py", line 862, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1263, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1287, in _add_q
+    split_subq=split_subq,
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1164, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1028, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1389, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'env_id' into field. Choices are: description, id, name, plan, private_key, project, project_id, url
+[2020-05-30 08:10:05,710][Thread-1:123145392656384][task_id:django.request][log.py:228][ERROR][Internal Server Error: /platform/case_run/]
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/APICloud/views.py", line 234, in case_run
+    execute = Execute(case_id, env_id)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/common/execute.py", line 25, in __init__
+    self.prj_id, self.env_url, self.private_key = self.get_env(self.env_id)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/common/execute.py", line 188, in get_env
+    env = Environment.objects.get(env_id=env_id)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/query.py", line 390, in get
+    clone = self.filter(*args, **kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/query.py", line 844, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/query.py", line 862, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1263, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1287, in _add_q
+    split_subq=split_subq,
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1164, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1028, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1389, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'env_id' into field. Choices are: description, id, name, plan, private_key, project, project_id, url
+[2020-05-30 08:14:34,366][Thread-6:123145516126208][task_id:django.request][log.py:228][ERROR][Internal Server Error: /platform/case_run/]
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/APICloud/views.py", line 235, in case_run
+    case_result = execute.run_case()
+  File "/Users/deyoukong/项目/web项目/TestPlatform/common/execute.py", line 35, in run_case
+    case = Case.objects.get(case_id=self.case_id)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/query.py", line 390, in get
+    clone = self.filter(*args, **kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/query.py", line 844, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/query.py", line 862, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1263, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1287, in _add_q
+    split_subq=split_subq,
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1164, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1028, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1389, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'case_id' into field. Choices are: content, description, id, name, project, project_id
+[2020-05-30 08:15:43,525][Thread-1:123145549815808][task_id:django.request][log.py:228][ERROR][Internal Server Error: /platform/case_run/]
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/APICloud/views.py", line 235, in case_run
+    case_result = execute.run_case()
+  File "/Users/deyoukong/项目/web项目/TestPlatform/common/execute.py", line 37, in run_case
+    case_run = {"case_id": self.case_id, "case_name": case.case_name, "result": "pass"}
+AttributeError: 'Case' object has no attribute 'case_name'
+[2020-05-30 09:02:58,046][Thread-6:123145467224064][task_id:django.request][log.py:228][WARNING][Not Found: /platform/case_delete/]
+[2020-05-30 09:06:39,113][Thread-4:123145436405760][task_id:django.request][log.py:228][ERROR][Internal Server Error: /platform/case_run/]
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/APICloud/views.py", line 231, in case_run
+    env_id = int(request.POST['env_id'])
+ValueError: invalid literal for int() with base 10: ''
+[2020-05-30 09:06:53,550][Thread-4:123145436405760][task_id:django.request][log.py:228][ERROR][Internal Server Error: /platform/case_run/]
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/APICloud/views.py", line 231, in case_run
+    env_id = int(request.POST['env_id'])
+ValueError: invalid literal for int() with base 10: ''
+[2020-05-30 09:07:28,784][Thread-1:123145371062272][task_id:django.request][log.py:228][ERROR][Internal Server Error: /platform/case_run/]
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/APICloud/views.py", line 233, in case_run
+    execute = Execute(case_id, env_id)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/common/execute.py", line 25, in __init__
+    self.prj_id, self.env_url, self.private_key = self.get_env(self.env_id)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/common/execute.py", line 188, in get_env
+    env = Environment.objects.get(id=env_id)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/query.py", line 390, in get
+    clone = self.filter(*args, **kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/query.py", line 844, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/query.py", line 862, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1263, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1287, in _add_q
+    split_subq=split_subq,
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1225, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1096, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/lookups.py", line 20, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/lookups.py", line 70, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 965, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: ''
+[2020-05-30 09:11:00,744][Thread-1:123145371062272][task_id:django.request][log.py:228][ERROR][Internal Server Error: /platform/interface_add/]
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/utils/datastructures.py", line 77, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'is_sign'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/APICloud/views.py", line 149, in interface_add
+    is_sign = request.POST['is_sign']
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/utils/datastructures.py", line 79, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'is_sign'
+[2020-05-30 09:11:35,052][Thread-1:123145371062272][task_id:django.request][log.py:228][ERROR][Internal Server Error: /platform/findata/]
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/APICloud/views.py", line 325, in findata
+    interface = Interface.objects.filter(id=if_id).values()
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/query.py", line 844, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/query.py", line 862, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1263, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1287, in _add_q
+    split_subq=split_subq,
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1225, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1096, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/lookups.py", line 20, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/lookups.py", line 70, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 965, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'undefined'
+[2020-05-30 09:11:40,628][Thread-1:123145371062272][task_id:django.request][log.py:228][ERROR][Internal Server Error: /platform/findata/]
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/APICloud/views.py", line 325, in findata
+    interface = Interface.objects.filter(id=if_id).values()
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/query.py", line 844, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/query.py", line 862, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1263, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1287, in _add_q
+    split_subq=split_subq,
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1225, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1096, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/lookups.py", line 20, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/lookups.py", line 70, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 965, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'undefined'
+[2020-05-30 09:16:20,693][Thread-1:123145449689088][task_id:django.request][log.py:228][ERROR][Internal Server Error: /platform/case_run/]
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/APICloud/views.py", line 234, in case_run
+    case_result = execute.run_case()
+  File "/Users/deyoukong/项目/web项目/TestPlatform/common/execute.py", line 39, in run_case
+    print(step_list[0])
+IndexError: list index out of range
+[2020-05-30 09:34:53,198][Thread-3:123145406140416][task_id:django.request][log.py:228][ERROR][Internal Server Error: /platform/findata/]
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/APICloud/views.py", line 321, in findata
+    return JsonResponse(if_list, safe=False)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/http/response.py", line 558, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/serializers/json.py", line 104, in default
+    return super().default(o)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'QuerySet' is not JSON serializable
+[2020-05-30 13:13:55,924][Thread-6:123145465638912][task_id:django.request][log.py:228][ERROR][Internal Server Error: /platform/case_add/]
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/contrib/sessions/backends/base.py", line 190, in _get_session
+    return self._session_cache
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/pymysql/connections.py", line 583, in connect
+    **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/socket.py", line 724, in create_connection
+    raise err
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/socket.py", line 713, in create_connection
+    sock.connect(sa)
+TimeoutError: [Errno 60] Operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 227, in get_new_connection
+    return Database.connect(**conn_params)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/pymysql/__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/pymysql/connections.py", line 325, in __init__
+    self.connect()
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/pymysql/connections.py", line 630, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '49.235.187.208' ([Errno 60] Operation timed out)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/APICloud/views.py", line 226, in case_add
+    return render(request, "TestPlatform/case/add.html", {"prj_list": prj_list})
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/template/base.py", line 987, in render
+    output = self.filter_expression.resolve(context)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/template/base.py", line 671, in resolve
+    obj = self.var.resolve(context)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/template/base.py", line 796, in resolve
+    value = self._resolve_lookup(context)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/utils/functional.py", line 213, in inner
+    self._setup()
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/utils/functional.py", line 347, in _setup
+    self._wrapped = self._setupfunc()
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/contrib/auth/middleware.py", line 24, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/contrib/auth/middleware.py", line 12, in get_user
+    request._cached_user = auth.get_user(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/contrib/auth/__init__.py", line 182, in get_user
+    user_id = _get_user_session_key(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/contrib/auth/__init__.py", line 59, in _get_user_session_key
+    return get_user_model()._meta.pk.to_python(request.session[SESSION_KEY])
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/contrib/sessions/backends/base.py", line 55, in __getitem__
+    return self._session[key]
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/contrib/sessions/backends/base.py", line 195, in _get_session
+    self._session_cache = self.load()
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/contrib/sessions/backends/db.py", line 43, in load
+    s = self._get_session_from_db()
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/contrib/sessions/backends/db.py", line 34, in _get_session_from_db
+    expire_date__gt=timezone.now()
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/query.py", line 393, in get
+    num = len(clone)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/query.py", line 250, in __len__
+    self._fetch_all()
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/query.py", line 1186, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1063, in execute_sql
+    cursor = self.connection.cursor()
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/backends/base/base.py", line 255, in cursor
+    return self._cursor()
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/backends/base/base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 227, in get_new_connection
+    return Database.connect(**conn_params)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/pymysql/__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/pymysql/connections.py", line 325, in __init__
+    self.connect()
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/pymysql/connections.py", line 630, in connect
+    raise exc
+django.db.utils.OperationalError: (2003, "Can't connect to MySQL server on '49.235.187.208' ([Errno 60] Operation timed out)")
+[2020-05-30 13:36:44,041][Thread-10:123145430528000][task_id:django.request][log.py:228][ERROR][Internal Server Error: /platform/case_run/]
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/APICloud/views.py", line 234, in case_run
+    case_result = execute.run_case()
+  File "/Users/deyoukong/项目/web项目/TestPlatform/common/execute.py", line 42, in run_case
+    step_info = self.step(step)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/common/execute.py", line 57, in step
+    interface = Interface.objects.get(id=if_id)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/query.py", line 390, in get
+    clone = self.filter(*args, **kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/query.py", line 844, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/query.py", line 862, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1263, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1287, in _add_q
+    split_subq=split_subq,
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1225, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1096, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/lookups.py", line 20, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/lookups.py", line 70, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 965, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'undefined'
+[2020-05-30 13:39:28,947][Thread-14:123145430528000][task_id:django.request][log.py:228][ERROR][Internal Server Error: /platform/case_run/]
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/APICloud/views.py", line 233, in case_run
+    execute = Execute(case_id, env_id)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/common/execute.py", line 25, in __init__
+    self.prj_id, self.env_url, self.private_key = self.get_env(self.env_id)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/common/execute.py", line 191, in get_env
+    env = Environment.objects.get(id=env_id)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/query.py", line 390, in get
+    clone = self.filter(*args, **kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/query.py", line 844, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/query.py", line 862, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1263, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1287, in _add_q
+    split_subq=split_subq,
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1225, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1096, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/lookups.py", line 20, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/lookups.py", line 70, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 965, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: ''
+[2020-05-30 13:39:39,915][Thread-14:123145430528000][task_id:django.request][log.py:228][ERROR][Internal Server Error: /platform/case_run/]
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/APICloud/views.py", line 234, in case_run
+    case_result = execute.run_case()
+  File "/Users/deyoukong/项目/web项目/TestPlatform/common/execute.py", line 42, in run_case
+    step_info = self.step(step)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/common/execute.py", line 57, in step
+    interface = Interface.objects.get(id=if_id)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/query.py", line 390, in get
+    clone = self.filter(*args, **kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/query.py", line 844, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/query.py", line 862, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1263, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1287, in _add_q
+    split_subq=split_subq,
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1225, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1096, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/lookups.py", line 20, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/lookups.py", line 70, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 965, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'undefined'
+[2020-05-30 14:16:07,482][Thread-4:123145419059200][task_id:django.request][log.py:228][ERROR][Internal Server Error: /platform/case_run/]
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/APICloud/views.py", line 235, in case_run
+    case_result = execute.run_case()
+  File "/Users/deyoukong/项目/web项目/TestPlatform/common/execute.py", line 42, in run_case
+    step_info = self.step(step)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/common/execute.py", line 75, in step
+    if_dict["if_name"] = step_content["if_name"]
+KeyError: 'if_name'
+[2020-05-30 14:28:33,375][Thread-12:123145499930624][task_id:django.request][log.py:228][ERROR][Internal Server Error: /platform/case_run/]
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/APICloud/views.py", line 233, in case_run
+    case_result = execute.run_case()
+  File "/Users/deyoukong/项目/web项目/TestPlatform/common/execute.py", line 42, in run_case
+    step_info = self.step(step)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/common/execute.py", line 57, in step
+    interface = Interface.objects.get(id=if_id)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/query.py", line 390, in get
+    clone = self.filter(*args, **kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/query.py", line 844, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/query.py", line 862, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1263, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1287, in _add_q
+    split_subq=split_subq,
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1225, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1096, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/lookups.py", line 20, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/lookups.py", line 70, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 965, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'undefined'

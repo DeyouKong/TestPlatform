@@ -148,7 +148,7 @@
                     success: function (data) {
                         dataJson = eval(data);
                         $.each(dataJson, function (i, item) {
-                            $("#if_id").append("<option value=" + item.if_id + ">" + item.if_name + "</option>");
+                            $("#if_id").append("<option value='" + item.id + "' name='" + item.name + "'>" + item.method + "-" + item.url + "-" + item.name + "</option>");
                         })
                     },
                     error: function () {
@@ -251,65 +251,65 @@
 
 
             $("#submit").click(function () {
-            var case_name = $("#case_name").val();
-            var prj_id = $("#prj_id").val();
-            var description = $("#description").val();
+                var case_name = $("#case_name").val();
+                var prj_id = $("#prj_id").val();
+                var description = $("#description").val();
 
-            var content = [];
-            $("div[class='panel']").each(function(i){
+                var content = [];
+                $("div[class='panel']").each(function(i){
 
-                var step = {};
+                    var step = {};
 
-                var if_id = $(this).find("div[class='panel-heading']").attr("id");
-                var if_name = $(this).find("div[class='panel-heading']").text();
-                var header_table = $(this).find("table[name='header']");
-                var header = {};
-                $(header_table).find("tr").each(function (i) {
-                    if (i == 0) return true;
-                    var name = $(this).find("td[name='var_name']").text();
-                    var value = $(this).find("td[name='var_value']").text();
-                    header[name] = value;
+                    var if_id = $("#if_id").val();
+                    var if_name = $("#if_id").find("option:selected").attr("name");
+                    var header_table = $(this).find("table[name='header']");
+                    var header = {};
+                    $(header_table).find("tr").each(function (i) {
+                        if (i == 0) return true;
+                        var name = $(this).find("td[name='var_name']").text();
+                        var value = $(this).find("td[name='var_value']").text();
+                        header[name] = value;
+                    });
+
+                    var body_table = $(this).find("table[name='body']");
+                    var body = {};
+                    $(body_table).find("tr").each(function (i) {
+                        if (i == 0) return true;
+                        var name = $(this).find("td[name='var_name']").text();
+                        var value = $(this).find("td[name='var_value']").text();
+                        body[name] = value;
+                    });
+
+                    var extract_table = $(this).find("table[name='extract']");
+                    var extract = {};
+                    $(extract_table).find("tr").each(function (i) {
+                        if (i == 0) return true;
+                        var name = $(this).find("td[name='var_name']").text();
+                        extract[name] = "";
+                    });
+
+                    var validators_table = $(this).find("table[name='validators']");
+                    var validators = [];
+                    $(validators_table).find("tr").each(function (i) {
+                        if (i == 0) return true;
+                        var vl = {};
+                        var name = $(this).find("td[name='var_name']").text();
+                        var value = $(this).find("td[name='var_value']").text();
+                        vl["check"] = name;
+                        vl["comparator"] = "eq";
+                        vl["expect"] = value;
+                        validators.push(vl);
+                    });
+
+                    step["if_id"] = if_id;
+                    step["if_name"] = if_name;
+                    step["header"] = header;
+                    step["body"] = body;
+                    step["extract"] = extract;
+                    step["validators"] = validators;
+
+                    content.push(step);
                 });
-
-                var body_table = $(this).find("table[name='body']");
-                var body = {};
-                $(body_table).find("tr").each(function (i) {
-                    if (i == 0) return true;
-                    var name = $(this).find("td[name='var_name']").text();
-                    var value = $(this).find("td[name='var_value']").text();
-                    body[name] = value;
-                });
-
-                var extract_table = $(this).find("table[name='extract']");
-                var extract = {};
-                $(extract_table).find("tr").each(function (i) {
-                    if (i == 0) return true;
-                    var name = $(this).find("td[name='var_name']").text();
-                    extract[name] = "";
-                });
-
-                var validators_table = $(this).find("table[name='validators']");
-                var validators = [];
-                $(validators_table).find("tr").each(function (i) {
-                    if (i == 0) return true;
-                    var vl = {};
-                    var name = $(this).find("td[name='var_name']").text();
-                    var value = $(this).find("td[name='var_value']").text();
-                    vl["check"] = name;
-                    vl["comparator"] = "eq";
-                    vl["expect"] = value;
-                    validators.push(vl);
-                });
-
-                step["if_id"] = if_id;
-                step["if_name"] = if_name;
-                step["header"] = header;
-                step["body"] = body;
-                step["extract"] = extract;
-                step["validators"] = validators;
-
-                content.push(step);
-            });
             var content_json = JSON.stringify(content);
 
             $.ajax({
@@ -337,6 +337,5 @@
         });
 
     </script>
-
 
     {% endblock %}

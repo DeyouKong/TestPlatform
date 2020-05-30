@@ -17,7 +17,7 @@ from django.contrib import admin
 from django.urls import path
 from django.conf.urls import url, include
 from APICloud import urls as APICloud_URLS
-from TestPlatform import views
+from TestPlatform import views, getCouponUseLimit
 from django.views.static import serve
 from django.conf import settings
 
@@ -34,5 +34,5 @@ urlpatterns = [
     url(r'^logout/$', views.logout),
     url(r'^platform/', include(APICloud_URLS)),
     url(r'^media/(?P<path>.*)$', serve, {"document_root": settings.MEDIA_ROOT}),
-
+    url(r'^getCouponUseLimit/', getCouponUseLimit.getCouponUseLimit)
 ]

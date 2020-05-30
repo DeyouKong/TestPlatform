@@ -32,11 +32,10 @@ class Execute():
         self.step_json = []
 
     def run_case(self):
-        case = Case.objects.get(case_id=self.case_id)
+        case = Case.objects.get(id=self.case_id)
         step_list = eval(case.content)
-        case_run = {"case_id": self.case_id, "case_name": case.case_name, "result": "pass"}
+        case_run = {"case_id": self.case_id, "case_name": case.name, "result": "pass"}
         case_step_list = []
-
         for step in step_list:
             step_info = self.step(step)
             case_step_list.append(step_info)
@@ -52,7 +51,7 @@ class Execute():
 
     def step(self, step_content):
         if_id = step_content["if_id"]
-        interface = Interface.objects.get(if_id=if_id)
+        interface = Interface.objects.get(id=if_id)
         var_list = self.extract_variables(step_content)
         # 检查是否存在变量
         if var_list:
@@ -185,7 +184,7 @@ class Execute():
 
     # 获取测试环境
     def get_env(self, env_id):
-        env = Environment.objects.get(env_id=env_id)
+        env = Environment.objects.get(id=env_id)
         prj_id = env.project.id
         return prj_id, env.url, env.private_key
 
@@ -194,14 +193,13 @@ class Execute():
         """
         sign_type: 签名方式
         """
-        prj = Project.objects.get(prj_id=prj_id)
+        prj = Project.objects.get(id=prj_id)
         sign_type = prj.sign.id
         return sign_type
 
 
     # 发送请求
     def call_interface(self, method, url, header, data, content_type='json'):
-        print(url, header, data)
         res = ''
         if method == "post":
             if content_type == "json":
@@ -210,6 +208,6 @@ class Execute():
                 res = requests.post(url=url, data=data, headers=header, verify=False)
         if method == "get":
             res = requests.get(url=url, params=data, headers=header, verify=False)
-        print(res.status_code, res.text)
+        # print(res.status_code, res.text)
         return res
 

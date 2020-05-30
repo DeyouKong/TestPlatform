@@ -33,6 +33,7 @@ urlpatterns = [
     url(r'^case/', views.case_index),
     url(r'^case_add/', views.case_add),
     url(r'^case_run/', views.case_run),
+    url(r'^case_delete/', views.case_delete),
 
     url(r'^plan/', views.plan_index),
     url(r'^plan_add/', views.plan_add),
