@@ -38,6 +38,7 @@ class Execute():
         case_step_list = []
         for step in step_list:
             step_info = self.step(step)
+            print(step_info)
             case_step_list.append(step_info)
             if step_info["result"] == "fail":
                 case_run["result"] = "fail"

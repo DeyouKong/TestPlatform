@@ -106,10 +106,10 @@
                         "type": "get_env_by_prj_id"
                     },
                 success: function (data) {
+                    $("#env_id").empty();
                     var listdata = eval(data);
                     $(listdata).each(function (i, item) {
-                        $("#env_id").empty();
-                        $("#env_id").append("<option value=" + item.env_id + ">" + item.env_name + "</option>");
+                        $("#env_id").append("<option value=" + item.id + ">" + item.name + "</option>");
                     })
                 },
                 error: function () {
@@ -137,7 +137,7 @@
                 success: function (data) {
                     var listdata = eval(data);
                     $(listdata).each(function (i, item) {
-                        $("#list").append("<label class='checkbox-inline'><input type='checkbox' name='case_id' value=" + item.case_id + ">" + item.case_name + "</label>");
+                        $("#list").append("<label class='checkbox-inline'><input type='checkbox' name='case_id' value=" + item.id + ">" + item.name + "</label>");
                     })
                 },
                 error: function () {

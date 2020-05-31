@@ -193,15 +193,15 @@
                                         "<th>值</th>" +
                                         "<th></th> </tr> </thead><tbody>";
                                     $.each(JSON.parse(body_json), function (i, item) {
-                                        var tr = "<tr><td>#</td><td name='var_name'>" + item.var_name + "</td><td contenteditable='true' name='var_value'></td><td><button class='btn btn-xs btn-outline btn-danger' type='button' onclick='del_step(this);'>&nbsp;删除行 </button> </td></tr>";
+                                        var tr = "<tr><td>#</td><td name='name'>" + item.var_name + "</td><td contenteditable='true' name='var_value'></td><td><button class='btn btn-xs btn-outline btn-danger' type='button' onclick='del_step(this);'>&nbsp;删除行 </button> </td></tr>";
                                         body_table = body_table + tr
                                     });
                                     var body = body_table + "</tbody></table>";
 
 
                                     var newtable = "<div class='row'><div class='col-sm-offset-1 col-sm-9'> <div class='panel'>" +
-                                        "<div id= '" + item.if_id + "' class='panel-heading'>" +
-                                        "<h3 class='panel-title'>" + item.if_name + "</h3>" +
+                                        "<div id= '" + item.id + "' class='panel-heading'>" +
+                                        "<h3 class='panel-title'>" + item.name + "</h3>" +
                                         "<div class='right'><button type=\"button\" class='btn-toggle-collapse'><i class='lnr lnr-chevron-up'></i></button></div>" +
                                         "</div>" +
                                         "<div class='panel-body'>" +
@@ -259,9 +259,8 @@
                 $("div[class='panel']").each(function(i){
 
                     var step = {};
-
-                    var if_id = $("#if_id").val();
-                    var if_name = $("#if_id").find("option:selected").attr("name");
+                    var if_id = $(this).find("div[class='panel-heading']").attr("id");
+                    var if_name = $(this).find("div[class='panel-heading']").text();
                     var header_table = $(this).find("table[name='header']");
                     var header = {};
                     $(header_table).find("tr").each(function (i) {

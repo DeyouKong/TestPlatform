@@ -273,7 +273,7 @@ def plan_run(request):
     if request.method == 'POST':
         plan_id = request.POST['plan_id']
         plan = Plan.objects.get(id=plan_id)
-        env_id = plan.environment.env_id
+        env_id = plan.environment.id
         case_id_list = eval(plan.content)
         case_num = len(case_id_list)
         content = []
@@ -290,7 +290,7 @@ def plan_run(request):
                 fail_num += 1
             if case_result["result"] == "error":
                 error_num += 1
-        report_name = plan.plan_name + "-" + time.strftime("%Y%m%d%H%M%S")
+        report_name = plan.name + "-" + time.strftime("%Y%m%d%H%M%S")
         if Report.objects.filter(plan=plan):
             Report.objects.filter(plan=plan).update(name=report_name, content=content, case_num=case_num,
                                                     pass_num=pass_num, fail_num=fail_num, error_num=error_num)
@@ -298,7 +298,7 @@ def plan_run(request):
             report = Report(plan=plan, name=report_name, content=content, case_num=case_num,
                             pass_num=pass_num, fail_num=fail_num, error_num=error_num)
             report.save()
-        return HttpResponse(plan.plan_name + " 执行成功！")
+        return HttpResponse(plan.name + " 执行成功！")
 
 def report_index(request):
     plan_id = request.GET['plan_id']

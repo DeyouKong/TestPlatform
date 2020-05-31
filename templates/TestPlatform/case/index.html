@@ -77,7 +77,7 @@
                                         <label class="col-sm-3 control-label">请选择测试环境</label>
                                         <div class="col-sm-8">
                                             <select class="form-control m-b" id="debug_env_id" name="env_id">
-                                                <option value=>请选择项目</option>
+                                                <option value=>请选择环境</option>
                                                 {% for env in env_list %}
                                                     <option value={{ env.id }}>{{ env.name }}</option>
                                                 {% endfor %}
