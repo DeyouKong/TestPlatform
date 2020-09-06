@@ -268,6 +268,11 @@ def plan_add(request):
     env_list = Environment.objects.all()
     return render(request, "TestPlatform/plan/add.html", {"prj_list": prj_list, "env_list": env_list})
 
+def plan_delete(request):
+    if request.method == 'GET':
+        plan_id = request.GET['plan_id']
+        Plan.objects.filter(id=plan_id).delete()
+        return redirect("/platform/plan/")
 
 def plan_run(request):
     if request.method == 'POST':

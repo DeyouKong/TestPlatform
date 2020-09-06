@@ -1,95 +1,112 @@
 {% extends "../base.html" %}
 
 {% block crumbs %}
-<div class="row">
-    <div class="col-md-12">
-        <ol class="breadcrumb">
-            <li>
-                <a href="/index/">主页</a>
-            </li>
-            <li class="active">
-                <a class="this">基础信息</a>
-            </li>
-            <li class="active">
-                <a class="this-page">测试计划管理</a>
-            </li>
-        </ol>
+    <div class="row">
+        <div class="col-md-12">
+            <ol class="breadcrumb">
+                <li>
+                    <a href="/index/">主页</a>
+                </li>
+                <li class="active">
+                    <a class="this">基础信息</a>
+                </li>
+                <li class="active">
+                    <a class="this-page">测试计划管理</a>
+                </li>
+            </ol>
 
+        </div>
     </div>
-</div>
 {% endblock %}
 
 {% block body %}
-<div class="row">
-    <div class="col-md-12">
-        <div class="panel">
-            <div class="panel-heading">
-                <a href="/platform/plan_add/" class="btn btn-primary">添加计划</a>
-            </div>
-            <div class="panel-body">
-                <table class="table table-bordered">
-                    <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>计划名称</th>
-                        <th>所属项目</th>
-                        <th>测试环境</th>
-                        <th>计划内容</th>
-                        <th>描述</th>
-                        <th>操作</th>
-                        <th>报告</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    {% for plan in plan_list %}
-                    <tr>
-                        <td>{{ plan.id }}</td>
-                        <td>{{ plan.name }}</td>
-                        <td>{{ plan.project }}</td>
-                        <td>{{ plan.environment }}</td>
-                        <td>{{ plan.content }}</td>
-                        <td>{{ plan.description }}</td>
-                        <td>
-                            <button class="btn btn-primary" onclick="run_button(this);">执行计划</button>
-                            <a href="/platform/plan_update?plan_id={{ plan.id }}" class="layui-btn layui-btn-xs"
-                               lay-event="edit">编辑</a>
-                            <a href="/platform/plan_delete?plan_id={{ plan.id }}"
-                               class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
-                        </td>
-                        <td>
-                            <a class="btn btn-primary" href="/platform/report/?plan_id={{plan.id}}"><i class="fa fa-edit"></i>&nbsp;查看报告</a>
-                        </td>
-                    </tr>
-                    {% endfor %}
-                    </tbody>
-                </table>
-            </div>
-        </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel">
+                <div class="panel-heading">
+                    <a href="/platform/plan_add/" class="btn btn-primary">添加计划</a>
+                </div>
+                <div class="panel-body">
+                    <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>计划名称</th>
+                            <th>所属项目</th>
+                            <th>测试环境</th>
+                            <th>计划内容</th>
+                            <th>描述</th>
+                            <th>操作</th>
+                            <th>报告</th>
+                        </tr>
+                        </thead>
+                        {% if plan_list %}
+                            <tbody>
+                            {% for plan in plan_list %}
+                                <tr>
+                                    <td>{{ plan.id }}</td>
+                                    <td>{{ plan.name }}</td>
+                                    <td>{{ plan.project }}</td>
+                                    <td>{{ plan.environment }}</td>
+                                    <td>{{ plan.content }}</td>
+                                    <td>{{ plan.description }}</td>
+                                    <td>
+                                        <button class="btn btn-primary" onclick="run_button(this);">执行计划</button>
+                                        <a href="/platform/plan_update?plan_id={{ plan.id }}"
+                                           class="layui-btn layui-btn-xs"
+                                           lay-event="edit">编辑</a>
+                                        <a href="/platform/plan_delete?plan_id={{ plan.id }}"
+                                           class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+                                    </td>
+                                    <td>
+                                        <a class="btn btn-primary" href="/platform/report/?plan_id={{ plan.id }}"><i
+                                                class="fa fa-edit"></i>&nbsp;查看报告</a>
+                                    </td>
+                                </tr>
+                            {% endfor %}
+                            </tbody>
+                        {% else %}
+{#                            <div class="ant-table-placeholder">#}
+{#                                <div class="ant-empty ant-empty-normal"#}
+{#                                     style="color: rgba(0,0,0,.25);font-size: 14px;line-height: 22px;text-align: center;">#}
+{#                                    <div class="ant-empty-image">#}
+{#                                        <img id="noData" alt="暂无数据"#}
+{#                                             style="vertical-align: middle;border-style: none;height: 40px"#}
+{#                                             src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNDEiIHZpZXdCb3g9IjAgMCA2NCA0MSIgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAxKSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgIDxlbGxpcHNlIGZpbGw9IiNGNUY1RjUiIGN4PSIzMiIgY3k9IjMzIiByeD0iMzIiIHJ5PSI3Ii8+CiAgICA8ZyBmaWxsLXJ1bGU9Im5vbnplcm8iIHN0cm9rZT0iI0Q5RDlEOSI+CiAgICAgIDxwYXRoIGQ9Ik01NSAxMi43Nkw0NC44NTQgMS4yNThDNDQuMzY3LjQ3NCA0My42NTYgMCA0Mi45MDcgMEgyMS4wOTNjLS43NDkgMC0xLjQ2LjQ3NC0xLjk0NyAxLjI1N0w5IDEyLjc2MVYyMmg0NnYtOS4yNHoiLz4KICAgICAgPHBhdGggZD0iTTQxLjYxMyAxNS45MzFjMC0xLjYwNS45OTQtMi45MyAyLjIyNy0yLjkzMUg1NXYxOC4xMzdDNTUgMzMuMjYgNTMuNjggMzUgNTIuMDUgMzVoLTQwLjFDMTAuMzIgMzUgOSAzMy4yNTkgOSAzMS4xMzdWMTNoMTEuMTZjMS4yMzMgMCAyLjIyNyAxLjMyMyAyLjIyNyAyLjkyOHYuMDIyYzAgMS42MDUgMS4wMDUgMi45MDEgMi4yMzcgMi45MDFoMTQuNzUyYzEuMjMyIDAgMi4yMzctMS4zMDggMi4yMzctMi45MTN2LS4wMDd6IiBmaWxsPSIjRkFGQUZBIi8+CiAgICA8L2c+CiAgPC9nPgo8L3N2Zz4K">#}
+{#                                    </div>#}
+{#                                    <p class="ant-empty-description">暂无数据</p>#}
+{#                                </div>#}
+{#                            </div>#}
+                        {% endif %}
 
+                    </table>
+                </div>
+            </div>
+
+        </div>
     </div>
-</div>
 {% endblock %}
 
 {% block javascript %}
-<script>
+    <script>
 
 
-function run_button(obj) {
-        alert("开始执行...");
-        var plan_id = obj.parentNode.parentNode.children[0].innerText;
-        $.ajax({
-            type: "post",
-            url: "/platform/plan_run/",
-            data: {"plan_id": plan_id},
-            success: function (data) {
-                alert(data);
-            },
-            error: function () {
-                alert("执行失败");
-            }
-        });
+        function run_button(obj) {
+            alert("开始执行...");
+            var plan_id = obj.parentNode.parentNode.children[0].innerText;
+            $.ajax({
+                type: "post",
+                url: "/platform/plan_run/",
+                data: {"plan_id": plan_id},
+                success: function (data) {
+                    alert(data);
+                },
+                error: function () {
+                    alert("执行失败");
+                }
+            });
 
-    }
+        }
 
-</script>
+    </script>
 {% endblock %}

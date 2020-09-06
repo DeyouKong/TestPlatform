@@ -37,6 +37,7 @@ urlpatterns = [
 
     url(r'^plan/', views.plan_index),
     url(r'^plan_add/', views.plan_add),
+    url(r'^plan_delete/', views.plan_delete),
     url(r'^plan_run/', views.plan_run),
 
     url(r'^report/', views.report_index),

@@ -3545,3 +3545,176 @@ Traceback (most recent call last):
   File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 965, in get_prep_value
     return int(value)
 ValueError: invalid literal for int() with base 10: 'undefined'
+[2020-05-31 04:50:08,986][Thread-1:123145337270272][task_id:django.request][log.py:228][ERROR][Internal Server Error: /platform/findata/]
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/APICloud/views.py", line 329, in findata
+    envs = Environment.objects.filter(project_id=prj_id).values()
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/query.py", line 844, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/query.py", line 862, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1263, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1287, in _add_q
+    split_subq=split_subq,
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1225, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1096, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/lookups.py", line 20, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/fields/related_lookups.py", line 115, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 965, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: ''
+[2020-05-31 04:54:22,371][Thread-9:123145337270272][task_id:django.request][log.py:228][ERROR][Internal Server Error: /platform/plan_run/]
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/APICloud/views.py", line 276, in plan_run
+    env_id = plan.environment.env_id
+AttributeError: 'Environment' object has no attribute 'env_id'
+[2020-05-31 04:54:50,413][Thread-1:123145462337536][task_id:django.request][log.py:228][ERROR][Internal Server Error: /platform/plan_run/]
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/APICloud/views.py", line 293, in plan_run
+    report_name = plan.plan_name + "-" + time.strftime("%Y%m%d%H%M%S")
+AttributeError: 'Plan' object has no attribute 'plan_name'
+[2020-05-31 04:55:27,765][Thread-1:123145440378880][task_id:django.request][log.py:228][ERROR][Internal Server Error: /platform/plan_run/]
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/APICloud/views.py", line 301, in plan_run
+    return HttpResponse(plan.plan_name + " 执行成功！")
+AttributeError: 'Plan' object has no attribute 'plan_name'
+[2020-05-31 11:27:56,256][Thread-38:123145461813248][task_id:django.request][log.py:228][ERROR][Internal Server Error: /platform/case_run/]
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/pymysql/connections.py", line 583, in connect
+    **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/socket.py", line 724, in create_connection
+    raise err
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/socket.py", line 713, in create_connection
+    sock.connect(sa)
+OSError: [Errno 51] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 227, in get_new_connection
+    return Database.connect(**conn_params)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/pymysql/__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/pymysql/connections.py", line 325, in __init__
+    self.connect()
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/pymysql/connections.py", line 630, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '49.235.187.208' ([Errno 51] Network is unreachable)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/APICloud/views.py", line 232, in case_run
+    execute = Execute(case_id, env_id)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/common/execute.py", line 25, in __init__
+    self.prj_id, self.env_url, self.private_key = self.get_env(self.env_id)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/common/execute.py", line 188, in get_env
+    env = Environment.objects.get(id=env_id)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/query.py", line 393, in get
+    num = len(clone)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/query.py", line 250, in __len__
+    self._fetch_all()
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/query.py", line 1186, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1063, in execute_sql
+    cursor = self.connection.cursor()
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/backends/base/base.py", line 255, in cursor
+    return self._cursor()
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/backends/base/base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 227, in get_new_connection
+    return Database.connect(**conn_params)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/pymysql/__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/pymysql/connections.py", line 325, in __init__
+    self.connect()
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/pymysql/connections.py", line 630, in connect
+    raise exc
+django.db.utils.OperationalError: (2003, "Can't connect to MySQL server on '49.235.187.208' ([Errno 51] Network is unreachable)")
+[2020-06-01 15:34:52,368][Thread-10:123145483145216][task_id:django.request][log.py:228][ERROR][Internal Server Error: /platform/report/]
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/APICloud/views.py", line 310, in report_index
+    report = Report.objects.get(id=plan_id)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/query.py", line 399, in get
+    self.model._meta.object_name
+APICloud.models.Report.DoesNotExist: Report matching query does not exist.
+[2020-09-06 14:02:20,889][Thread-4:123145515716608][task_id:django.request][log.py:228][ERROR][Internal Server Error: /platform/case_run/]
+Traceback (most recent call last):
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/APICloud/views.py", line 233, in case_run
+    case_result = execute.run_case()
+  File "/Users/deyoukong/项目/web项目/TestPlatform/common/execute.py", line 40, in run_case
+    step_info = self.step(step)
+  File "/Users/deyoukong/项目/web项目/TestPlatform/common/execute.py", line 55, in step
+    interface = Interface.objects.get(id=if_id)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/query.py", line 399, in get
+    self.model._meta.object_name
+APICloud.models.Interface.DoesNotExist: Interface matching query does not exist.
