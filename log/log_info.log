@@ -3840,3 +3840,16 @@ Traceback (most recent call last):
   File "/Users/deyoukong/Envs/selenium_web/lib/python3.6/site-packages/django/db/models/query.py", line 399, in get
     self.model._meta.object_name
 APICloud.models.Interface.DoesNotExist: Interface matching query does not exist.
+[2020-09-08 12:19:53,509][Thread-8:140705693406976][task_id:django.request][log.py:228][ERROR][Internal Server Error: /platform/env_update/]
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/Django_2_2/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.virtualenvs/Django_2_2/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.virtualenvs/Django_2_2/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/Project/TestPlatform/TestPlatform/APICloud/views.py", line 120, in env_update
+    env_id = int(request.POST['env_id'])
+ValueError: invalid literal for int() with base 10: 'hidden'
+[2020-09-08 12:19:53,750][Thread-8:140705693406976][task_id:django.request][log.py:228][WARNING][Not Found: /favicon.ico]
+[2020-09-08 12:20:14,017][Thread-7:140705701799680][task_id:django.request][log.py:228][WARNING][Not Found: /platform/env_delete]
