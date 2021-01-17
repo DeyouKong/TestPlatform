@@ -133,9 +133,25 @@ def env_update(request):
     return render(request, "TestPlatform/env/update.html", {"env": env, "prj_list": prj_list})
 
 
+def env_delete(request):
+    ret = {"status": "0", "messages": ""}
+    if request.method == 'GET':
+        try:
+            env_id = request.GET.get('env_id')
+            Environment.objects.filter(id=env_id).delete()
+            ret["messages"] = "/platform/env_index/"
+            return JsonResponse(ret)
+        except Exception as err:
+            ret["status"] = 1
+            ret["messages"] = err
+            return ret
+    return redirect("")
+
+
 def interface_index(request):
     if_list = Interface.objects.all()
     return render(request, "TestPlatform/interface/index.html", {"if_list": if_list})
+
 
 def interface_add(request):
     ret = {"status": "0", "messages": ""}

@@ -24,6 +24,7 @@ urlpatterns = [
     url(r'^env/', views.env_index),
     url(r'^env_add/', views.env_add),
     url(r'^env_update/', views.env_update),
+    url(r'^env_delete/', views.env_delete),
 
     url(r'^interface_add/', views.interface_add),
     url(r'^interface_update/', views.interface_update),

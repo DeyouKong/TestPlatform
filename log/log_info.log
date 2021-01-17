@@ -3853,3 +3853,68 @@ Traceback (most recent call last):
 ValueError: invalid literal for int() with base 10: 'hidden'
 [2020-09-08 12:19:53,750][Thread-8:140705693406976][task_id:django.request][log.py:228][WARNING][Not Found: /favicon.ico]
 [2020-09-08 12:20:14,017][Thread-7:140705701799680][task_id:django.request][log.py:228][WARNING][Not Found: /platform/env_delete]
+[2021-01-17 15:17:04,193][Thread-74:123145366949888][task_id:django.request][exception.py:118][ERROR][Internal Server Error: /platform/env_update/]
+Traceback (most recent call last):
+  File "/Users/deyou/.virtualenvs/testPlatform/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/deyou/.virtualenvs/testPlatform/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/deyou/.virtualenvs/testPlatform/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/deyou/Desktop/python项目/TestPlatform/TestPlatform/APICloud/views.py", line 120, in env_update
+    env_id = int(request.POST['env_id'])
+ValueError: invalid literal for int() with base 10: 'hidden'
+[2021-01-17 15:17:04,395][Thread-75:123145372205056][task_id:django.request][base.py:93][WARNING][Not Found: /favicon.ico]
+[2021-01-17 15:17:18,001][Thread-76:123145366949888][task_id:django.request][exception.py:118][ERROR][Internal Server Error: /platform/env_update/]
+Traceback (most recent call last):
+  File "/Users/deyou/.virtualenvs/testPlatform/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/deyou/.virtualenvs/testPlatform/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/deyou/.virtualenvs/testPlatform/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/deyou/Desktop/python项目/TestPlatform/TestPlatform/APICloud/views.py", line 120, in env_update
+    env_id = int(request.POST['env_id'])
+ValueError: invalid literal for int() with base 10: ''
+[2021-01-17 15:17:35,514][Thread-77:123145372205056][task_id:django.request][exception.py:118][ERROR][Internal Server Error: /platform/env_update/]
+Traceback (most recent call last):
+  File "/Users/deyou/.virtualenvs/testPlatform/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/deyou/.virtualenvs/testPlatform/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/deyou/.virtualenvs/testPlatform/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/deyou/Desktop/python项目/TestPlatform/TestPlatform/APICloud/views.py", line 120, in env_update
+    env_id = int(request.POST['env_id'])
+ValueError: invalid literal for int() with base 10: 'SIT'
+[2021-01-17 15:17:39,843][Thread-78:123145366949888][task_id:django.request][base.py:93][WARNING][Not Found: /platform/env_delete]
+[2021-01-17 15:20:37,880][Thread-6:123145378586624][task_id:django.request][exception.py:118][ERROR][Internal Server Error: /platform/env_delete/]
+Traceback (most recent call last):
+  File "/Users/deyou/.virtualenvs/testPlatform/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/deyou/.virtualenvs/testPlatform/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/deyou/.virtualenvs/testPlatform/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/deyou/Desktop/python项目/TestPlatform/TestPlatform/APICloud/views.py", line 148, in env_delete
+    return redirect("")
+  File "/Users/deyou/.virtualenvs/testPlatform/lib/python3.6/site-packages/django/shortcuts.py", line 58, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "/Users/deyou/.virtualenvs/testPlatform/lib/python3.6/site-packages/django/shortcuts.py", line 149, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "/Users/deyou/.virtualenvs/testPlatform/lib/python3.6/site-packages/django/urls/base.py", line 88, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/Users/deyou/.virtualenvs/testPlatform/lib/python3.6/site-packages/django/urls/resolvers.py", line 632, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for '' not found. '' is not a valid view function or pattern name.
+[2021-01-17 15:26:45,153][Thread-31:123145361547264][task_id:django.request][exception.py:118][ERROR][Internal Server Error: /platform/interface_update]
+Traceback (most recent call last):
+  File "/Users/deyou/.virtualenvs/testPlatform/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/deyou/.virtualenvs/testPlatform/lib/python3.6/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/Users/deyou/.virtualenvs/testPlatform/lib/python3.6/site-packages/django/middleware/common.py", line 61, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/Users/deyou/.virtualenvs/testPlatform/lib/python3.6/site-packages/django/middleware/common.py", line 99, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8080/platform/interface_update/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
