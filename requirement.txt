@@ -2,7 +2,7 @@ beautifulsoup4==4.9.0
 bs4==0.0.1
 certifi==2019.11.28
 chardet==3.0.4
-Django==2.1.4
+Django==2.2.24
 geetest==3.2.1
 idna==2.9
 PyMySQL==0.9.3
